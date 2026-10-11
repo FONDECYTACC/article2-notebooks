@@ -1,0 +1,30 @@
+cff-version: 1.0.0
+title: "Machine-learning-informed Cox models for first readmission and all-cause mortality after substance use disorder treatment in Chile: development and performance evaluation"
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+
+authors:
+  - family-names: "González-Santa Cruz"
+    given-names: "Andrés"
+    orcid: "https://orcid.org/0000-0002-5166-9121"
+
+  - family-names: "Castillo-Carniglia"
+    given-names: "Alvaro"
+    orcid: "https://orcid.org/0000-0002-3016-890X"
+
+  - family-names: "Kaufman"
+    given-names: "Jay S."
+    orcid: "https://orcid.org/0000-0003-1606-401X"
+
+repository-code: "https://github.com/FONDECYTACC/article2-notebooks"
+
+keywords:
+  - survival analysis
+  - cox model
+  - machine learning
+  - substance use disorder
+  - readmission
+  - mortality
+  - Chile
+
+license: "MIT"
