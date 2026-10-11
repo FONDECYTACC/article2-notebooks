@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1490" viewBox="0 0 1200 1490" role="img" aria-labelledby="title desc">
+<title id="title">Figure 2. Diagram of Thesis project</title>
+<desc id="desc">Updated Article 2 workflow. Split before development-only imputation. XGBoost discovery and DeepSurv sensitivity run in parallel. Retained Cox models are evaluated on the holdout and two additional SENDA cohorts. Notebook 13 assembles the manuscript outputs. The multistate nomogram remains outside this reconstruction.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#53677d"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#1b263b}.label{font-size:21px;font-weight:700}.line{font-size:18px}.small{font-size:16px}.box{fill:#f3f6fa;stroke:#8193a8;stroke-width:1.5}.sensitivity{fill:#f4effb;stroke:#8c75ad}.evaluation{fill:#edf6f2;stroke:#4d8370}.context{fill:#f7f7f7;stroke:#aaa}.edge{fill:none;stroke:#53677d;stroke-width:2;marker-end:url(#arrow)}.note{fill:#fff5df;stroke:#aa8b4a}</style>
+<rect width="1200" height="1490" fill="white"/>
+<path class="edge" d="M600 118 V156"/>
+<path class="edge" d="M600 236 V260 H400 V280"/>
+<path class="edge" d="M600 260 H960 V280"/>
+<path class="edge" d="M400 388 V420 H330 V450"/>
+<path class="edge" d="M600 388 V420 H890 V450"/>
+<path class="edge" d="M330 585 V632"/>
+<path class="edge" d="M890 585 V632"/>
+<path class="edge" d="M330 772 V846"/>
+<path class="edge" d="M590 892 H620 V702 H654" stroke-dasharray="7 5"/>
+<path class="edge" d="M330 942 V1020"/>
+<path class="edge" d="M1120 338 H1160 V984 H330 V1020" stroke-dasharray="7 5"/>
+<path class="edge" d="M586 1068 H654"/>
+<path class="edge" d="M1120 702 H1182 V1170 H900 V1206" stroke-dasharray="7 5"/>
+<path class="edge" d="M330 1120 V1206"/>
+<path class="edge" d="M890 1120 V1206"/>
+<a href="https://fondecytacc.github.io/cons2025/" target="_top">
+<rect class="box context" x="80" y="32" width="1040" height="86" rx="10"/>
+<text class="label" x="100" y="64">Published registry preparation and other thesis analyses</text>
+<text class="line" x="100" y="92">Standardization, deduplication, mortality linkage and Article 1: cons2025.</text>
+</a>
+<rect class="box box" x="80" y="156" width="1040" height="80" rx="10"/>
+<text class="label" x="100" y="188">Person-level split before imputation, tuning or SHAP</text>
+<text class="line" x="100" y="216">Same index cohort and allocation retained: 70,521 development; 17,631 held out.</text>
+<a href="../00_development_only_imputation.html" target="_top">
+<rect class="box box" x="80" y="280" width="650" height="108" rx="10"/>
+<text class="label" x="100" y="312">00 | Five development-only missRanger imputations</text>
+<text class="line" x="100" y="340">Predictors only; no outcomes or follow-up times in the imputer.</text>
+<text class="line" x="100" y="365">Apply the fitted imputers to held-out and additional cohorts.</text>
+</a>
+<a href="../09_prediction23_converted_mod.html" target="_top">
+<rect class="box evaluation" x="810" y="280" width="310" height="108" rx="10"/>
+<text class="label" x="830" y="312">Held-out sample</text>
+<text class="line" x="830" y="340">Does not fit imputers,</text>
+<text class="line" x="830" y="365">tuning or SHAP models.</text>
+</a>
+<a href="../03_XGboost_combined_mar26.html" target="_top">
+<rect class="box box" x="80" y="450" width="500" height="135" rx="10"/>
+<text class="label" x="100" y="482">01-03 | XGBoost discovery</text>
+<text class="line" x="100" y="510">Separate readmission and mortality tuning.</text>
+<text class="line" x="100" y="535">TreeSHAP, screening, interaction signals</text>
+<text class="line" x="100" y="560">and functional-form suggestions.</text>
+</a>
+<a href="../05_DeepSurv2_mar26.html" target="_top">
+<rect class="box sensitivity" x="660" y="450" width="460" height="135" rx="10"/>
+<text class="label" x="680" y="482">04-05 | DeepSurv sensitivity</text>
+<text class="line" x="680" y="510">Mortality learns from all recorded deaths.</text>
+<text class="line" x="680" y="535">SHAP explains risk at six horizons;</text>
+<text class="line" x="680" y="560">consistency is descriptive.</text>
+</a>
+<a href="../07_prediction22_converted_mod.html" target="_top">
+<rect class="box box" x="80" y="632" width="500" height="140" rx="10"/>
+<text class="label" x="100" y="664">06-07 | Build and compare Cox models</text>
+<text class="line" x="100" y="692">Table 1, PH diagnostics, sequential strata.</text>
+<text class="line" x="100" y="717">Remove the collinear term. Test interactions</text>
+<text class="line" x="100" y="742">and forms; retain b/e under study rules.</text>
+</a>
+<a href="../12_prediction24_converted_mod.html" target="_top">
+<rect class="box sensitivity" x="660" y="632" width="460" height="140" rx="10"/>
+<text class="label" x="680" y="664">12 | DeepSurv-informed Cox models</text>
+<text class="line" x="680" y="692">Compare predictors, strata, interactions</text>
+<text class="line" x="680" y="717">and functional forms with Full and b/e.</text>
+<text class="line" x="680" y="742">Retain as sensitivity analyses.</text>
+</a>
+<text class="small" x="668" y="822">Dashed links: held-out data or saved results.</text>
+<a href="../08_prediction225_converted_mod.html" target="_top">
+<rect class="box box" x="80" y="846" width="500" height="96" rx="10"/>
+<text class="label" x="100" y="878">08 | Paired development comparisons</text>
+<text class="line" x="100" y="906">Risk-based C, integrated Brier score,</text>
+<text class="line" x="100" y="931">calibration and competing-risk alternatives.</text>
+</a>
+<rect class="box note" x="660" y="860" width="460" height="80" rx="10"/>
+<text class="label" x="680" y="892">Retained primary specifications</text>
+<text class="line" x="680" y="920">b: setting + discharge; e: setting + physical.</text>
+<text class="small" x="674" y="965">Full mortality remains an alternative.</text>
+<a href="../09_prediction23_converted_mod.html" target="_top">
+<rect class="box evaluation" x="80" y="1020" width="500" height="100" rx="10"/>
+<text class="label" x="100" y="1052">09 | Held-out evaluation</text>
+<text class="line" x="100" y="1080">Apply selected models without refitting.</text>
+<text class="line" x="100" y="1105">Discrimination, calibration and decision curves.</text>
+</a>
+<a href="../10_readmission_temporal_int_val_21_24.html" target="_top">
+<rect class="box evaluation" x="660" y="1020" width="460" height="100" rx="10"/>
+<text class="label" x="680" y="1052">10-11 | Additional SENDA evaluations</text>
+<text class="line" x="680" y="1080">10: later readmission, 2021-2024.</text>
+<text class="line" x="680" y="1105">11: mortality in homelessness programs.</text>
+</a>
+<a href="../13_manuscript_tables_figures.html" target="_top">
+<rect class="box evaluation" x="80" y="1206" width="1040" height="84" rx="10"/>
+<text class="label" x="100" y="1238">13 | Manuscript tables, figures and traceability</text>
+<text class="line" x="100" y="1266">4 Tables, 15 eTables, 4 Figures and 4 eFigures from the saved analyses.</text>
+</a>
+<rect class="box context" x="80" y="1330" width="1040" height="128" rx="10"/>
+<text class="label" x="100" y="1362">Scope and limits</text>
+<text class="line" x="100" y="1390">Imputation and discovery precede internal CV; the whole process is not independent within folds.</text>
+<text class="line" x="100" y="1415">No automatic replacement of b/e from sensitivity results. Multistate nomogram: published legacy work,</text>
+<text class="line" x="100" y="1440">outside this reconstruction. This website diagram is separate from manuscript Figure 2.</text>
+</svg>

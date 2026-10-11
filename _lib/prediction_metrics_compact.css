@@ -1,0 +1,183 @@
+/* ============================================================
+   ULTRA-COMPACT CODE FORMATTING FOR QUARTO HTML OUTPUT
+   ============================================================ */
+
+/* --------------------------------------------------------
+   1. CODE BLOCKS (fenced code with ```)
+   -------------------------------------------------------- */
+
+pre.sourceCode.code-with-copy {
+  padding: 0.25rem 0.4rem !important;
+}
+
+div.sourceCode pre code {
+  line-height: 1.2 !important;
+  font-size: 0.78rem !important;
+}
+
+pre code span {
+  line-height: 1.15 !important;
+}
+
+div.cell {
+  margin-bottom: 0.35rem !important;
+  margin-top: 0.2rem !important;
+}
+
+div.sourceCode {
+  margin: 0.15rem 0 !important;
+  border-radius: 3px !important;
+}
+
+/* --------------------------------------------------------
+   2. INLINE CODE (backtick `code`)
+   -------------------------------------------------------- */
+
+code:not(pre code) {
+  font-size: 0.72em !important;
+  padding: 0.02em 0.15em !important;
+  border-radius: 2px !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  line-height: 1.0 !important;
+}
+
+/* --------------------------------------------------------
+   3. CODE OUTPUT (cell results)
+   -------------------------------------------------------- */
+
+div.cell-output {
+  margin-top: 0.1rem !important;
+  margin-bottom: 0.2rem !important;
+  padding: 0.1rem 0.25rem !important;
+  font-size: 0.75rem !important;
+  line-height: 1.1 !important;
+}
+
+div.cell-output pre {
+  max-height: 420px;
+  overflow: auto;
+  margin: 0 !important;
+  padding: 0.1rem 0.2rem !important;
+  font-size: 0.72rem !important;
+  line-height: 1.05 !important;
+}
+
+/* --------------------------------------------------------
+   4. CODE FOLD BUTTON
+   -------------------------------------------------------- */
+
+.code-fold-btn {
+  font-size: 0.6rem !important;
+  padding: 0.05rem 0.25rem !important;
+}
+
+/* --------------------------------------------------------
+   5. CODE ANNOTATIONS / LINE NUMBERS
+   -------------------------------------------------------- */
+
+pre.sourceCode .ln {
+  font-size: 0.68rem !important;
+  padding-right: 0.3rem !important;
+  opacity: 0.5;
+}
+
+/* --------------------------------------------------------
+   6. GLIMPSE / TIBBLE / DATA.FRAME OUTPUT
+   -------------------------------------------------------- */
+
+/* The ANSI-escaped output wrapper used by IRKernel */
+div.ansi-escaped-output {
+  line-height: 0.8 !important;
+  font-size: 0.72rem !important;
+}
+
+/* CRITICAL: Ultra-compact pre for console output.
+   IRKernel puts blank lines between each line of output.
+   Low line-height makes those blank lines shorter. */
+div.ansi-escaped-output pre {
+  line-height: 0.75 !important;
+  font-size: 0.7rem !important;
+  padding: 0.05rem 0.1rem !important;
+  margin: 0 !important;
+}
+
+/* All cell output pre blocks */
+div.cell-output pre,
+div.cell-output pre code,
+div.cell-output pre code span {
+  line-height: 1.0 !important;
+  font-size: 0.72rem !important;
+}
+
+/* Even tighter for preformatted text */
+div.cell-output pre {
+  padding: 0.05rem 0.15rem !important;
+  margin: 0 !important;
+}
+
+div.cell-output pre code {
+  display: block;
+}
+
+/* Reduce spacing for all spans inside ANSI output */
+div.ansi-escaped-output pre code span,
+div.cell-output pre code span[style*="color:"],
+div.cell-output pre code span.al,
+div.cell-output pre code span.an,
+div.cell-output pre code span.at,
+div.cell-output pre code span.bn,
+div.cell-output pre code span.bu,
+div.cell-output pre code span.cf,
+div.cell-output pre code span.ch,
+div.cell-output pre code span.cn,
+div.cell-output pre code span.co,
+div.cell-output pre code span.cv,
+div.cell-output pre code span.do,
+div.cell-output pre code span.dt,
+div.cell-output pre code span.dv,
+div.cell-output pre code span.er,
+div.cell-output pre code span.ex,
+div.cell-output pre code span.fl,
+div.cell-output pre code span.fu,
+div.cell-output pre code span.im,
+div.cell-output pre code span.in,
+div.cell-output pre code span.kw,
+div.cell-output pre code span.op,
+div.cell-output pre code span.ot,
+div.cell-output pre code span.pp,
+div.cell-output pre code span.sc,
+div.cell-output pre code span.ss,
+div.cell-output pre code span.st,
+div.cell-output pre code span.va,
+div.cell-output pre code span.vs,
+div.cell-output pre code span.wa {
+  line-height: 0.9 !important;
+  font-size: 0.7rem !important;
+}
+
+/* Compact the cell-output container */
+div.cell-output:has(pre) {
+  padding: 0.05rem 0.15rem !important;
+  margin-top: 0.05rem !important;
+  margin-bottom: 0.15rem !important;
+}
+
+/* --------------------------------------------------------
+   7. GENERAL: reduce vertical space in document
+   -------------------------------------------------------- */
+
+p {
+  margin-bottom: 0.4rem !important;
+  line-height: 1.35 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.8rem !important;
+  margin-bottom: 0.3rem !important;
+  line-height: 1.15 !important;
+}
